@@ -1,0 +1,10 @@
+.errorMessage, .loadingMessage {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.loadingMessage {
+    font-style: italic;
+}
