@@ -1,7 +1,9 @@
+import './logo.css';
+
 const Logo = () => {
     return (
         <>
-            <span>THE PLANETS</span>
+            <span className='logoText'>THE PLANETS</span>
         </>
     );
 }

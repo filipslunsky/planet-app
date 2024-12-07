@@ -8,6 +8,7 @@ import Jupiter from './features/planets/Jupiter';
 import Saturn from './features/planets/Saturn';
 import Uranus from './features/planets/Uranus';
 import Neptune from './features/planets/Neptune';
+import './App.css';
 
 function App() {
 
