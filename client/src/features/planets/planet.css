@@ -30,6 +30,7 @@
 
 .wikiSource {
     color: rgb(93, 93, 93);
+    font-size: 12px;
 }
 
 .wikiSourceLink {
@@ -114,4 +115,36 @@
     margin: 10px 0 15px 15px;
     font-size: 30px;
     font-weight: 500;
+}
+
+/* tablet size devices*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .dynamicDataContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .planetImage {
+        width: 38%;
+    }
+
+    .descriptionAndControlsContainer {
+        flex-direction: row;
+        width: 80%;
+        align-items: flex-end;
+        margin-bottom: 30px;
+    }
+
+    .descriptionContainer {
+        width: 48%;
+    }
+
+    .controlsContainer {
+        width: 40%;
+    }
+
+    .additionalDataItemInfo {
+        font-size: 20px;
+    }
 }
