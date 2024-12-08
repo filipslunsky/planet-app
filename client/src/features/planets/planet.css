@@ -8,8 +8,8 @@
 }
 
 .planetImage {
-    width: 29%;
-    margin: 5%;
+    height: 25%;
+    margin: 40px;
 }
 
 .descriptionAndControlsContainer {
@@ -117,7 +117,7 @@
 
 .additionalDataItemInfo {
     margin: 10px 0 15px 15px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
 }
 
@@ -130,7 +130,7 @@
     }
 
     .planetImage {
-        width: 38%;
+        height: 35%;
     }
 
     .descriptionAndControlsContainer {
