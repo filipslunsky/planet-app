@@ -228,6 +228,7 @@
         flex-direction: column;
         width: 100%;
         align-items: center;
+        text-align: center;
     }
 
     .planetImage {
@@ -237,6 +238,35 @@
     
     .descriptionAndControlsContainer {
         display: flex;
-        width: 70%;
+        width: 65%;
+    }
+
+    .planetDescription {
+        font-size: 16px;
+        text-align: center;
+        line-height: 160%;
+        margin-bottom: 10px;
+    }
+
+    .wikiSource {
+        margin-bottom: 20px;
+    }
+
+    .additionalDataContainer {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .additionalDataItem {
+        width: 90%;
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .additionalDataItemInfo {
+        margin: 15px;
     }
 }

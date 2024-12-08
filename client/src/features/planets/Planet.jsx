@@ -54,15 +54,15 @@ const Planet = ({data}) => {
             <div className='additionalDataContainer'>
                 <div className="additionalDataItem">
                     <h4 className="additionalDataItemTitle">ROTATION TIME</h4>
-                    <p className="additionalDataItemInfo">{data.rotation}</p>
+                    <p className="additionalDataItemInfo">{data.rotation.toUpperCase()}</p>
                 </div>
                 <div className="additionalDataItem">
                     <h4 className="additionalDataItemTitle">REVOLUTION TIME</h4>
-                    <p className="additionalDataItemInfo">{data.revolution}</p>
+                    <p className="additionalDataItemInfo">{data.revolution.toUpperCase()}</p>
                 </div>
                 <div className="additionalDataItem">
                     <h4 className="additionalDataItemTitle">RADIUS</h4>
-                    <p className="additionalDataItemInfo">{data.radius}</p>
+                    <p className="additionalDataItemInfo">{data.radius.toUpperCase()}</p>
                 </div>
                 <div className="additionalDataItem">
                     <h4 className="additionalDataItemTitle">AVERAGE TEMP</h4>
