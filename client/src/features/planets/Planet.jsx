@@ -30,38 +30,40 @@ const Planet = ({data}) => {
     };
     
     return (
-        <> 
-            <div className="dynamicDataContainer">
-                <div className="imgAndDescriptionContainer">
+        <>
+            <div className="planetMainContainer"> 
+                <div className="dynamicDataContainer">
                     <img className='planetImage' src={`${PLANETS_URL}${data.images[img].substring(1)}`} alt={`${data.name} image`} />
-                    <div className="descriptionContainer">
-                        <h1 className='planetName'>{data.name.toUpperCase()}</h1>
-                        <p className='planetDescription'>{data[content].content}</p>
-                        <p className='wikiSource'>Source: <a className='wikiSourceLink' href={data[content].source} target='_blank'>Wikipedia &#x2197;</a></p>
+                    <div className="descriptionAndControlsContainer">
+                        <div className="descriptionContainer">
+                            <h1 className='planetName'>{data.name.toUpperCase()}</h1>
+                            <p className='planetDescription'>{data[content].content}</p>
+                            <p className='wikiSource'>Source: <a className='wikiSourceLink' href={data[content].source} target='_blank'>Wikipedia &#x2197;</a></p>
+                        </div>
+                        <div className="controlsContainer">
+                            <h3 className={`controlItem ${selected === 1 ? `selectedControlItem${data.name}` : ''}`} onClick={() => {setOption(1)}}>O1 OVERVIEW</h3>
+                            <h3 className={`controlItem ${selected === 2 ? `selectedControlItem${data.name}` : ''}`} onClick={() => {setOption(2)}}>O2 INTERNAL STRUCTURE</h3>
+                            <h3 className={`controlItem ${selected === 3 ? `selectedControlItem${data.name}` : ''}`} onClick={() => {setOption(3)}}>O3 SURFACE GEOLOGY</h3>
+                        </div>
                     </div>
                 </div>
-                <div className="controlsContainer">
-                    <h3 className={`controlItem ${selected === 1 ? `selectedControlItem ${data.name.toLowerCase()}` : ''}`} onClick={() => {setOption(1)}}>O1 OVERVIEW</h3>
-                    <h3 className={`controlItem ${selected === 2 ? `selectedControlItem ${data.name.toLowerCase()}` : ''}`} onClick={() => {setOption(2)}}>O2 INTERNAL STRUCTURE</h3>
-                    <h3 className={`controlItem ${selected === 3 ? `selectedControlItem ${data.name.toLowerCase()}` : ''}`} onClick={() => {setOption(3)}}>O3 SURFACE GEOLOGY</h3>
-                </div>
-            </div>
-            <div className='additionalDataContainer'>
-                <div className="additionalDataItem">
-                    <h4 className="additionalDataItemTitle">ROTATION TIME</h4>
-                    <p className="additionalDataItemInfo">{data.rotation}</p>
-                </div>
-                <div className="additionalDataItem">
-                    <h4 className="additionalDataItemTitle">REVOLUTION TIME</h4>
-                    <p className="additionalDataItemInfo">{data.revolution}</p>
-                </div>
-                <div className="additionalDataItem">
-                    <h4 className="additionalDataItemTitle">RADIUS</h4>
-                    <p className="additionalDataItemInfo">{data.radius}</p>
-                </div>
-                <div className="additionalDataItem">
-                    <h4 className="additionalDataItemTitle">AVERAGE TEMP</h4>
-                    <p className="additionalDataItemInfo">{data.temperature.toUpperCase()}</p>
+                <div className='additionalDataContainer'>
+                    <div className="additionalDataItem">
+                        <h4 className="additionalDataItemTitle">ROTATION TIME</h4>
+                        <p className="additionalDataItemInfo">{data.rotation}</p>
+                    </div>
+                    <div className="additionalDataItem">
+                        <h4 className="additionalDataItemTitle">REVOLUTION TIME</h4>
+                        <p className="additionalDataItemInfo">{data.revolution}</p>
+                    </div>
+                    <div className="additionalDataItem">
+                        <h4 className="additionalDataItemTitle">RADIUS</h4>
+                        <p className="additionalDataItemInfo">{data.radius}</p>
+                    </div>
+                    <div className="additionalDataItem">
+                        <h4 className="additionalDataItemTitle">AVERAGE TEMP</h4>
+                        <p className="additionalDataItemInfo">{data.temperature.toUpperCase()}</p>
+                    </div>
                 </div>
             </div>
         </>

@@ -1,2 +1,117 @@
-/* purple color is #6d2ed5 */
+.dynamicDataContainer {
+    display: flex;
+    justify-content: space-around;
+}
 
+.planetImage {
+    width: 25%;
+    margin: 5%;
+}
+
+.descriptionAndControlsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: space-evenly;
+}
+
+.planetName {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.planetDescription {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #adaec2;
+}
+
+.wikiSource {
+    color: rgb(93, 93, 93);
+}
+
+.wikiSourceLink {
+    color: #fefeff;
+}
+
+.controlsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.controlItem {
+    border: 1px solid rgb(93, 93, 93);
+    margin: 5px 0;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+.selectedControlItemMercury {
+    background-color: #5dd1f4;
+    border: none;
+}
+
+.selectedControlItemVenus {
+    background-color: #f8c966;
+    border: none;
+}
+
+.selectedControlItemEarth {
+    background-color: #6d2ed5;
+    border: none;
+}
+
+.selectedControlItemMars {
+    background-color: #8a4745;
+    border: none;
+}
+
+.selectedControlItemJupiter {
+    background-color: #60382f;
+    border: none;
+}
+
+.selectedControlItemSaturn {
+    background-color: #9a554b;
+    border: none;
+}
+
+.selectedControlItemUranus {
+    background-color: #6ebacc;
+    border: none;
+}
+
+.selectedControlItemNeptune {
+    background-color: #2671ea;
+    border: none;
+}
+
+.additionalDataContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.additionalDataItem {
+    border: 1px solid rgb(93, 93, 93);
+    width: 17%;
+    border-radius: 3px;
+}
+
+.additionalDataItemTitle {
+    margin: 10px 0 5px 15px;
+    font-size: 12px;
+    font-weight: 300;
+    color: gray;
+}
+
+.additionalDataItemInfo {
+    margin: 10px 0 15px 15px;
+    font-size: 30px;
+    font-weight: 500;
+}
