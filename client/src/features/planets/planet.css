@@ -1,10 +1,14 @@
+.controlsContainerMobile {
+    display: none;
+}
+
 .dynamicDataContainer {
     display: flex;
     justify-content: space-around;
 }
 
 .planetImage {
-    width: 25%;
+    width: 29%;
     margin: 5%;
 }
 
@@ -146,5 +150,93 @@
 
     .additionalDataItemInfo {
         font-size: 20px;
+    }
+}
+
+/* mobile size devices*/
+@media (max-width: 767px) {
+    .controlsContainer {
+        display: none;
+    }
+
+    .controlsContainerMobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        border-bottom: 1px solid #adaec2;
+    }
+
+    .controlItem {
+        border: none;
+        font-weight: 300;
+        padding: 6px;
+        margin-bottom: 0;
+        width: 20%;
+        text-align: center;
+    }
+
+    .selectedControlItemMercury {
+        background-color: inherit;
+        border-radius: 0;
+        border-bottom: 2px solid #5dd1f4;
+    }
+    
+    .selectedControlItemVenus {
+        background-color: inherit;
+        border-radius: 0;
+        border-bottom: 2px solid #f8c966;
+    }
+    
+    .selectedControlItemEarth {
+        background-color: inherit;
+        border-radius: 0;
+        border-bottom: 2px solid #6d2ed5;
+    }
+    
+    .selectedControlItemMars {
+        background-color: inherit;
+        border-radius: 0;
+        border-bottom: 2px solid #8a4745;
+    }
+    
+    .selectedControlItemJupiter {
+        background-color: inherit;
+        border-radius: 0;
+        border-bottom: 2px solid #60382f;
+    }
+    
+    .selectedControlItemSaturn {
+        background-color: inherit;
+        border-radius: 0;
+        border-bottom: 2px solid #9a554b;
+    }
+    
+    .selectedControlItemUranus {
+        background-color: inherit;
+        border-radius: 0;
+        border-bottom: 2px solid #6ebacc;
+    }
+    
+    .selectedControlItemNeptune {
+        background-color: inherit;
+        border-radius: 0;
+        border-bottom: 2px solid #2671ea;
+    }
+
+    .dynamicDataContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .planetImage {
+        width: 60%;
+        margin: 5%;
+    }
+    
+    .descriptionAndControlsContainer {
+        display: flex;
+        width: 70%;
     }
 }
