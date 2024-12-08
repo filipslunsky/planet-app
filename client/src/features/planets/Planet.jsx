@@ -41,9 +41,9 @@ const Planet = ({data}) => {
                     </div>
                 </div>
                 <div className="controlsContainer">
-                    <h3 className={`controlItem ${selected === 1 ? 'selectedControlItem' : ''}`} onClick={() => {setOption(1)}}>O1 OVERVIEW</h3>
-                    <h3 className={`controlItem ${selected === 2 ? 'selectedControlItem' : ''}`} onClick={() => {setOption(2)}}>O2 INTERNAL STRUCTURE</h3>
-                    <h3 className={`controlItem ${selected === 3 ? 'selectedControlItem' : ''}`} onClick={() => {setOption(3)}}>O3 SURFACE GEOLOGY</h3>
+                    <h3 className={`controlItem ${selected === 1 ? `${data.name.toLowerCase()}` : ''}`} onClick={() => {setOption(1)}}>O1 OVERVIEW</h3>
+                    <h3 className={`controlItem ${selected === 2 ? `${data.name.toLowerCase()}` : ''}`} onClick={() => {setOption(2)}}>O2 INTERNAL STRUCTURE</h3>
+                    <h3 className={`controlItem ${selected === 3 ? `${data.name.toLowerCase()}` : ''}`} onClick={() => {setOption(3)}}>O3 SURFACE GEOLOGY</h3>
                 </div>
             </div>
             <div className='additionalDataContainer'>
